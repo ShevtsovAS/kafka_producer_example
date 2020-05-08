@@ -9,5 +9,5 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties("kafka")
 public class KafkaProperties {
     public String bootstrapServers = "localhost:9092";
-    public String topic = "test_topic";
+    public String studentTopic = "student_topic";
 }

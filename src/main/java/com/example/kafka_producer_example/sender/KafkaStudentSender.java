@@ -17,7 +17,7 @@ public class KafkaStudentSender implements Sender<Student> {
 
     @Override
     public void sendData(Student student) {
-        kafkaTemplate.send(kafkaProperties.getTopic(), student);
-        log.info("Data {} sent to Kafka topic {}", student, kafkaProperties.getTopic());
+        kafkaTemplate.send(kafkaProperties.getStudentTopic(), student);
+        log.info("Data {} sent to Kafka topic {}", student, kafkaProperties.getStudentTopic());
     }
 }
